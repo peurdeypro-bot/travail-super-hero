@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#173c32">
+        <title>Le Courrier de Saint-Leu | Le Réunionator retrouvé</title>
+        <link rel="stylesheet" href="indec.css">
+    </head>
+    <body>
+        <header class="masthead">
+            <div class="brand">
+                <span class="brand-mark">CSL</span>
+                <span>Le Courrier <i>de Saint-Leu</i></span>
+            </div>
+            <span class="edition">Épisode 4 <span class="edition-dot"></span> Fiction</span>
+        </header>
+
+        <main class="page">
+            <article>
+                <header class="article-header">
+                    <p class="eyebrow"><span class="eyebrow-line"></span> Épisode 4 · L’identité révélée</p>
+                    <h1>La police retrouve le Réunionator</h1>
+                    <p class="standfirst">Les enquêteurs ont retrouvé le héros blessé au Guillaume. Les deux hommes impliqués dans l’altercation, eux, n’ont pas encore été identifiés.</p>
+                    <div class="article-meta">
+                        <span>Par Justin Declemy</span>
+                        <span>Saint-Leu · Fiction</span>
+                    </div>
+                </header>
+
+                <figure class="lead-image portrait-frame">
+                    <button class="portrait-reveal" type="button" aria-expanded="false">
+                        <img src="portrait-fourni.jpg" alt="Portrait utilisé pour illustrer le personnage fictif du Réunionator">
+                        <span class="portrait-reveal-prompt">
+                            <strong>Le super-héros, c’est qui ?</strong>
+                            <span>Clique sur l’image pour le découvrir</span>
+                        </span>
+                    </button>
+                    <figcaption>Dans cette fiction, ce portrait illustre le Réunionator. Il ne présente pas la personne photographiée comme impliquée dans une affaire réelle.</figcaption>
+                </figure>
+
+                <div class="article-layout">
+                    <div class="story">
+                        <p class="opening"><span class="dropcap">L</span>’appel est arrivé tôt lundi matin. Un habitant avait aperçu quelqu’un près d’une remise abandonnée, à l’écart du chemin. Les policiers s’y sont rendus et ont trouvé le Réunionator, blessé mais conscient. Il a été pris en charge et conduit à l’hôpital.</p>
+
+                        <p>À l’hôpital, l’homme a accepté de parler aux enquêteurs. Il a confirmé qu’il était le Réunionator. Il s’appelle Manu — un prénom d’emprunt choisi pour ce récit — et habite les hauts de Saint-Leu depuis plusieurs années. Il dit être intervenu après avoir vu des déchets déversés près du bois.</p>
+
+                        <aside class="pull-quote">
+                            <span class="quote-mark">“</span>
+                            <p>Je voulais empêcher que le bois soit encore abîmé. Je n’aurais pas dû me mettre en danger.</p>
+                            <span class="quote-credit">Manu, identité fictive utilisée dans ce récit</span>
+                        </aside>
+
+                        <h2>Les agresseurs toujours recherchés</h2>
+                        <p>La découverte du Réunionator ne règle pas l’affaire. Les deux hommes qu’il accuse de l’avoir attaqué n’ont pas été retrouvés et leur identité n’a pas été établie. La police poursuit ses recherches et recueille les témoignages des habitants.</p>
+
+                        <p>Au Guillaume, la nouvelle a surpris tout le monde. Certains voudraient que l’homme réponde de ses méthodes devant la justice. D’autres disent surtout espérer qu’il guérira. Djeeam Folio, elle, est retournée au bois avec ses voisins : « On peut être en désaccord avec lui et continuer à protéger cet endroit. »</p>
+
+                        <footer class="cliffhanger">
+                            <span class="cliffhanger-kicker">Fin de l’histoire</span>
+                            <p>Le masque est tombé, mais l’enquête sur les deux agresseurs continue. Au Guillaume, le sentier, lui, est resté propre.</p>
+                            <span class="cliffhanger-mark" aria-hidden="true">…</span>
+                        </footer>
+                    </div>
+
+                    <aside class="sidebar" aria-label="Bilan de l’enquête">
+                        <div class="sidebar-card sidebar-note">
+                            <p class="sidebar-label">Où en est l’enquête ?</p>
+                            <ul>
+                                <li>Le Réunionator a été retrouvé et soigné</li>
+                                <li>Il a révélé son identité aux enquêteurs</li>
+                                <li>Les deux agresseurs restent introuvables</li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </article>
+        </main>
+
+        <nav class="episode-navigation" aria-label="Retour au début de l’histoire">
+            <a class="episode-return" href="index.html"><span aria-hidden="true">←</span> Retour à l’épisode 1</a>
+        </nav>
+        <footer class="site-footer">Le Courrier de Saint-Leu <span>·</span> Épisode 4 · Fin</footer>
+        <script>
+            const revealButton = document.querySelector(".portrait-reveal");
+            const revealPrompt = revealButton.querySelector(".portrait-reveal-prompt");
+
+            revealButton.addEventListener("click", () => {
+                revealButton.classList.add("is-revealed");
+                revealButton.setAttribute("aria-expanded", "true");
+                revealPrompt.innerHTML = "<strong>Voici le Réunionator !</strong>";
+            });
+        </script>
+    </body>
+</html>
